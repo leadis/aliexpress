@@ -279,14 +279,14 @@
 
         /* Animated background for header */
         .animated-bg {
-            background: linear-gradient(-45deg, #ff4747, #e63e3e, #ff6b6b, #ff8e8e);
-            background-size: 400% 400%;
-            padding: 6rem 0;
-            margin-bottom: 3rem;
-            position: relative;
-            overflow: hidden;
-            animation: gradientBG 15s ease infinite;
-        }
+    background: linear-gradient(-45deg, #1a9f8c, #1a8f9f, #1a7faf, #1a6fbf);
+    background-size: 400% 400%;
+    padding: 6rem 0;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    animation: gradientBG 15s ease infinite;
+}
 
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
@@ -295,16 +295,16 @@
         }
 
         .animated-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') center/cover;
-            opacity: 0.15;
-            mix-blend-mode: overlay;
-        }
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') center/cover;
+    opacity: 0.08; /* Changé de 0.15 à 0.08 pour une image plus claire */
+    mix-blend-mode: overlay;
+}
 
         .animated-bg-content {
             position: relative;
@@ -323,11 +323,11 @@
         }
 
         .particle {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-            animation: floatParticle linear infinite;
-        }
+    position: absolute;
+    background: rgba(173, 216, 230, 0.6); /* Bleu clair au lieu de blanc */
+    border-radius: 50%;
+    animation: floatParticle linear infinite;
+}
 
         @keyframes floatParticle {
             0% {
